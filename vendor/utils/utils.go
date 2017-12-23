@@ -7,7 +7,7 @@ import (
 )
 
 func RandomArray(l int) []int {
-	m := 100000
+	m := 100
 	a := make([]int, l, l)
 	for i := 0; i < l; i++ {
 		a[i] = rand.Intn(m)
