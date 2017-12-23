@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	a := u.RandomArray()
+	a := u.RandomArray(50000)
 	fmt.Println("Sorting", len(a), "items")
 	bubbleSort(a)
 }

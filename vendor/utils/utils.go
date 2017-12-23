@@ -6,17 +6,12 @@ import (
 	"time"
 )
 
-func RandomArray() []int {
-
-	l := 50000
+func RandomArray(l int) []int {
 	m := 100000
-
 	a := make([]int, l, l)
-
 	for i := 0; i < l; i++ {
 		a[i] = rand.Intn(m)
 	}
-
 	return a
 }
 
