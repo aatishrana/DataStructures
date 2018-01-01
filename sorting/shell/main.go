@@ -18,10 +18,17 @@ func shellSort(a []int) {
 
 	h := 1
 	for h <= l/3 {
+
+		//	increment gap sequence till half of array length
 		h = h*3 + 1
 	}
 
+	fmt.Println(h)
+
+	//	loop till h is reduced to zero
 	for h > 0 {
+
+		// outer loop
 		for i := h; i < l; i++ {
 			temp = a[i]
 			j := i
